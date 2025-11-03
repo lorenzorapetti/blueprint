@@ -241,6 +241,7 @@ let
               home-manager.useGlobalPkgs = lib.mkDefault true;
               home-manager.useUserPackages = lib.mkDefault true;
               home-manager.backupFileExtension = lib.mkDefault "backup";
+              home-manager.overwriteBackup = lib.mkDefault true;
             };
         in
         lib.optional (builtins.hasAttr hostname homesNested) module;
